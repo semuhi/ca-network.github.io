@@ -47,14 +47,17 @@ p {
 
 .research-section {
   margin: 2em 0;
+  border-top: 2px solid #ccc; /* This adds the long line */
 }
 
 .research-toggle {
   cursor: pointer;
   background: none;
   border: none;
-  text-decoration: underline;
-  font-size: 1.2em;
+  font-size: 1.5em;  /* Make it appear like a heading */
+  text-align: center; /* Center align the text */
+  display: block;  /* Make it occupy the entire line */
+  margin-top: 1em; /* Add some space above the text */
 }
 
 .research-content {
