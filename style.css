@@ -91,6 +91,10 @@ p {
 
 
 @media (max-width: 768px) {
+  .open-panel {
+    top: 3em;  /* Increase top margin to avoid title */
+    font-size: 1em;  /* Optional: You may want to reduce font size */
+  }
   .member {
     flex-direction: column !important; /* Forces the direction for all .member */
     align-items: center;
