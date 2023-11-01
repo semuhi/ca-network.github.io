@@ -74,6 +74,8 @@ p {
   margin: 0.5em 0;
 }
 
+/* Existing CSS ... */
+
 @media (max-width: 768px) {
   .member {
     flex-direction: column;
@@ -81,6 +83,11 @@ p {
   }
 
   .profile-photo img {
-    margin: 1em 0; /* Adjust for vertical layout */
+    margin-bottom: 1em; /* Spacing between the image and text */
+  }
+
+  .profile-content {
+    text-align: center; /* Center-align the text */
   }
 }
+
