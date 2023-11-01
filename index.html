@@ -86,19 +86,19 @@
 <!-- Our Research Trigger -->
 <button id="open-panel" class="open-panel">Our Research</button>
 
-  <script>
+<script>
   const openBtn = document.getElementById('open-panel');
-  const closeBtn = document.getElementById('close-panel');
   const panel = document.getElementById('research-panel');
 
   openBtn.addEventListener('click', () => {
-    panel.style.width = "50%";
-  });
-
-  closeBtn.addEventListener('click', () => {
-    panel.style.width = "0";
+    if (panel.style.width === "50%") {
+      panel.style.width = "0";
+    } else {
+      panel.style.width = "50%";
+    }
   });
 </script>
+
 
 </body>
 </html>
