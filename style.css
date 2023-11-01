@@ -75,20 +75,21 @@ p {
   margin: 0.5em 0;
 }
 
-/* Existing CSS ... */
+/* ... Existing CSS ... */
 
 @media (max-width: 768px) {
   .member {
-    flex-direction: column;
+    flex-direction: column !important; /* Forces the direction for all .member */
     align-items: center;
   }
 
   .profile-photo img {
-    margin-bottom: 1em; /* Spacing between the image and text */
+    margin-bottom: 1em;
   }
 
   .profile-content {
-    text-align: center; /* Center-align the text */
+    text-align: center;
   }
 }
+
 
