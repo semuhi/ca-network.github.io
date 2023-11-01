@@ -64,21 +64,6 @@ p {
   margin-top: 3em;  /* Adds extra space above the list */
 }
 
-.close-panel {
-  position: absolute;
-  top: 1em;  /* Adjust as needed */
-  right: 1em;  /* Adjust as needed */
-  font-size: 1.5em;
-  z-index: 100;  /* Ensures the button stays above other elements */
-  background-color: #fff;  /* Sets background to white */
-  border: 1px solid #ccc;  /* Optional: adds a border */
-  border-radius: 50%;  /* Optional: rounds the button */
-  width: 2em;  /* Sets width */
-  height: 2em;  /* Sets height */
-  text-align: center;  /* Centers the '×' symbol */
-  line-height: 1.7em;  /* Adjusts the vertical position of the '×' */
-}
-
 
 /* Trigger button */
 .open-panel {
@@ -97,7 +82,7 @@ p {
 
 @media (max-width: 768px) {
   .open-panel {
-    top: 3em;  /* Increase top margin to avoid title */
+    top: 5em;  /* Increase top margin to avoid title */
     font-size: 1em;  /* Optional: You may want to reduce font size */
   }
   .member {
