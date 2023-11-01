@@ -43,39 +43,38 @@ p {
   margin-top: 0.5em;
 }
 
-/* Existing CSS ... */
-
-.research-section {
-  margin: 2em 0;
-  border-top: 2px solid #ccc; /* This adds the long line */
+/* Research Panel */
+.research-panel {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
-.research-toggle {
-  cursor: pointer;
+.research-panel h2 {
+  margin: 1em;
+}
+
+.close-panel {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 1.5em;
+}
+
+/* Trigger button */
+.open-panel {
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
   background: none;
   border: none;
-  font-size: 1.5em;  /* Make it appear like a heading */
-  text-align: center; /* Center align the text */
-  font-weight: bold; 
-  display: block;  /* Make it occupy the entire line */
-  margin-top: 1em; /* Add some space above the text */
 }
-
-.research-content {
-  display: none;
-  margin-top: 1em;
-}
-
-.research-content ul {
-  list-style-type: disc;
-  padding-left: 2em;
-}
-
-.research-content ul li {
-  margin: 0.5em 0;
-}
-
-/* ... Existing CSS ... */
 
 @media (max-width: 768px) {
   .member {
