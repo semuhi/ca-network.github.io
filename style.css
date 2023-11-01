@@ -70,11 +70,16 @@ p {
 .open-panel {
   font-weight: bold;
   position: fixed;
-  top: 0;
-  right: 0;
-  background: none;
+  top: 1em;  /* Added some top margin */
+  right: 1em;  /* Added some right margin */
+  background-color: #007bff;  /* Changed background color */
+  color: white;  /* Text color set to white */
   border: none;
+  padding: 1em 1.5em;  /* Increased padding */
+  font-size: 1.2em;  /* Increased font size */
+  border-radius: 5px;  /* Rounded corners */
 }
+
 
 @media (max-width: 768px) {
   .member {
