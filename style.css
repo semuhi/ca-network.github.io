@@ -74,7 +74,7 @@ p {
   position: fixed;
   top: 1em;  /* Added some top margin */
   right: 1em;  /* Added some right margin */
-  background-color: black;  /* Changed background color */
+  background-color: rgba(0, 0, 0, 0.5);  /* Changed background color */
   color: #f2f2f2;  
   border: none;
   padding: 1em 1.5em;  /* Increased padding */
