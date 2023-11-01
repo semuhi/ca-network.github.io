@@ -16,12 +16,26 @@ header {
 
 .member {
   margin: 1em;
-  text-align: center;
+  display: flex;
 }
 
-img {
+.member:nth-child(odd) .profile-photo {
+  margin-right: 1em;
+  order: 1;
+}
+
+.member:nth-child(even) .profile-photo {
+  margin-left: 1em;
+  order: 2;
+}
+
+.profile-photo img {
   max-width: 150px;
-  margin-bottom: 1em;
+  border-radius: 50%; /* Makes the image round */
+}
+
+.profile-content {
+  flex: 1;
 }
 
 h2 {
