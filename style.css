@@ -64,6 +64,9 @@ p {
   margin-bottom: 3em;  /* Adds extra space above the list */
 }
 
+.research-panel ul li {
+  margin-bottom: 1em;  /* Adds extra space below each list item */
+}
 
 /* Trigger button */
 .open-panel {
