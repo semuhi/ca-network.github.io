@@ -17,21 +17,17 @@ header {
 .member {
   margin: 1em;
   display: flex;
+  flex-direction: row-reverse; /* Default to right align */
 }
 
-.member:nth-child(odd) .profile-photo {
-  margin-right: 1em;
-  order: 1;
-}
-
-.member:nth-child(even) .profile-photo {
-  margin-left: 1em;
-  order: 2;
+.member:nth-child(odd) {
+  flex-direction: row; /* Override to left align */
 }
 
 .profile-photo img {
   max-width: 150px;
-  border-radius: 50%; /* Makes the image round */
+  border-radius: 50%;  /* Makes the image round */
+  margin: 0 1em; /* Margin to separate from text */
 }
 
 .profile-content {
