@@ -80,20 +80,34 @@
   </div>
 </div>
 
+<!-- Our Research Slide-in Panel -->
+<div id="research-panel" class="research-panel">
+  <button id="close-panel" class="close-panel">&times;</button>
+  <h2>Our Research</h2>
+  <ul>
+    <li><a href="#paper1">Research Paper 1</a></li>
+    <li><a href="#paper2">Research Paper 2</a></li>
+    <!-- ...more papers... -->
+  </ul>
+</div>
+
+<!-- Our Research Trigger -->
+<button id="open-panel" class="open-panel">Our Research</button>
+
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.getElementById('toggle-research');
-    const content = document.getElementById('research-content');
-    
-    toggleButton.addEventListener('click', function() {
-      if (content.style.display === 'none' || content.style.display === '') {
-        content.style.display = 'block';
-      } else {
-        content.style.display = 'none';
-      }
-    });
+  const openBtn = document.getElementById('open-panel');
+  const closeBtn = document.getElementById('close-panel');
+  const panel = document.getElementById('research-panel');
+
+  openBtn.addEventListener('click', () => {
+    panel.style.width = "50%";
+  });
+
+  closeBtn.addEventListener('click', () => {
+    panel.style.width = "0";
   });
 </script>
+
 
 </body>
 </html>
